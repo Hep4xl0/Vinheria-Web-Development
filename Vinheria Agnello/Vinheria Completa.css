@@ -113,11 +113,16 @@ margin: 0;
 }
 
 h1 {
+user-select: none;
 font-size: 240%;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-style: italic;
 color: #A01837;
 margin: 0px;
+}
+
+.nomemaior {
+font-size: 300%;
 }
 
 h2 {
@@ -163,6 +168,11 @@ color: white;
 width: 150px;
 height: 150px;
 cursor: pointer;
+transition: 200ms ease;
+}
+
+.agnello:hover {
+transform: scale(110%);
 }
 
 .selecionaagnello {
@@ -193,9 +203,78 @@ display: flex;
 flex-direction: column;
 }
 
+.catalogue2 {
+margin-left: 180px;
+margin-right: 240px;
+margin-top: 0px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.infodireita {
+user-select: none;
+font-size: 200%;
+font-weight: 600;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: black;
+opacity: 60%;
+margin: 0px;
+padding-bottom: 10px;
+}
+
+.valortotal {
+user-select: none;
+font-size: 150%;
+font-weight: 600;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #A01837;
+margin: 0px;
+margin-top: 30px;
+margin-bottom: -15px;
+}
+
+.operadores {
+border: solid #A01837;
+border-width: 2px;
+border-radius: 10px;
+font-size: 150%;
+align-items: center;
+color: #A01837;
+background-color: white;
+height: 45px;
+display: flex;
+justify-content: space-evenly;
+font-family: verdana;
+margin: auto 10px 
+}
+
+.tirapoe {
+cursor: pointer;
+background-color: transparent;
+border: none;
+font-size: 150%;
+color: #A01837;
+transition: 200ms ease;
+}
+
+.tirapoe:active {
+transform: scale(115%);
+}
+
+.soparatirarcursor {
+color: #A01837;
+user-select: none;
+}
+
 .produto {
 display: inline-flex;
 padding-bottom: 90px;
+}
+
+.produto2 {
+display: inline-flex;
+padding-bottom: 50px;
 }
 
 .description {
@@ -211,7 +290,23 @@ border-radius: 15px;
 cursor: pointer;
 }
 
+.garrafa2 {
+height: 400px;
+scale: 130%;
+margin-right: 10px;
+}
+
 .price {
+padding: 10px;
+text-align: center;
+background-color: #D9D9D9;
+border-radius: 15px;
+align-items: end;
+display:inline-block;
+}
+
+.price2 {
+width: 230px;
 padding: 10px;
 text-align: center;
 background-color: #D9D9D9;
@@ -245,8 +340,7 @@ scale: 150%;
 margin-top: 25px;
 width: 151px;
 height: 30px;
-border-radius: 10px;
-border-width: 0px;
+border-radius: 10px; 
 font-size: 70%;
 font-weight: 600;
 color: white;
@@ -256,9 +350,41 @@ border-width: 2.5px;
 border: solid #A01837;
 margin-left: 38px;
 cursor: pointer;
-}   
+}
+
+.comprar2 {
+align-content: center;
+scale: 150%;
+margin-top: 27px;
+margin-left: 41px;
+margin-right: 40px;
+height: 35px;
+border-radius: 10px;
+font-weight: 600;
+color: white;
+background-color: #A01837;
+transition: 300ms ease;
+border-width: 2.5px;
+border: solid #A01837;
+cursor: pointer;
+}
+
+.scotland {
+width: 250px;
+margin: 0 auto;
+margin-top: 30px;
+height: 110px;
+}
 
 .comprar:hover {
+background-color: #A01837;
+color: white;
+border: solid #701127;
+border-width: 2.5px;
+box-shadow: rgba(0, 0, 0, 0.445) 0px 2px 3px 0px;
+}
+
+.comprar2:hover {
 background-color: #A01837;
 color: white;
 border: solid #701127;
@@ -274,16 +400,15 @@ a {
 color: black;
 text-decoration: transparent;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 120%;
+font-size: 100%;
 font-weight: 700;
 transition: 300ms ease;
 }
 
-a:hover {
+.dizem:hover {
 color: #A01837;
 text-decoration: underline;
 }
-
 
 .user {
 margin: 0px;
@@ -307,6 +432,28 @@ border-radius: 15px;
 display: flex;
 flex-direction: column;
 margin-top: 10px;
+}
+
+.comments2 {
+background-color: #D9D9D9;
+padding: 10px;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+margin-top: 10px;
+height: 195px;
+overflow: auto;
+}
+
+.comentarios {
+padding-bottom: 30px;
+}
+
+.star {
+color: #A01837;
+margin: 0;
+padding-left: 10px;
+font-size: 120%;
 }
 
 .photoandname {
@@ -339,7 +486,21 @@ border-radius: 10px;
 cursor: pointer;
 }
 
+.video2 {
+width: 960px;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: #FCE8C6 0px 0px 0px 3px;
+margin-top: 40px;
+margin-bottom: 40px;
+}
 
+.bigvideo {
+display: flex;
+justify-content: center;
+background-color: #A01837;
+box-shadow: #A01837 -2px -5px 20px 20px;
+}
 
 .porcima {
 display: flex;
@@ -416,11 +577,11 @@ opacity: 50%;
 }
 
 .visitus {
-margin-top: -5px;
 display: flex;
 justify-content: center;
 background: linear-gradient(100deg, #A01837, black);
 }
+
 
 
 
@@ -447,7 +608,7 @@ body{
     margin: 0;
 
 }
-p {
+.contatofinal {
     color: white;
 }
 .textotitulo {
@@ -520,4 +681,8 @@ nav img {
     width: 112px;
     height: 119px;
 
+}
+
+.sobrenos {
+color: white;
 }
