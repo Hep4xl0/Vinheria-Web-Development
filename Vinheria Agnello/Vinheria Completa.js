@@ -47,3 +47,15 @@ total = reais * mais;
 quantidade.innerHTML = mais;
 valor.innerHTML = `R$ ${total},00`;
 }
+
+function caixaCupom(){
+    var cupomNome = prompt("insira o cupom de desconto no campo abaixo")
+    var cupomNome = cupomNome.toUpperCase()
+    if (cupomNome == "FIAP2024") {
+        total = total - (total*(10/100))
+    }
+    else{
+        alert("Cupom invalido ou expirado!")
+    }
+    valor.innerHTML= `R$ ${total},00`;
+}
