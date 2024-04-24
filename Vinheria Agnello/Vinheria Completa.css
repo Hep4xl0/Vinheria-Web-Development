@@ -582,6 +582,51 @@ justify-content: center;
 background: linear-gradient(100deg, #A01837, black);
 }
 
+.plus18 {
+background-color: #A01837;
+}
+
+.nomeAgnello {
+scale: 80%;
+}
+
+.toplogo {
+display: flex;
+justify-content: center;
+}
+
+.question18 {
+margin-top: 280px;
+color: white;
+font-style: normal;
+display: flex;
+justify-content: center;
+}
+
+.botao {
+margin-top: 20px;
+padding: 10px;
+border-radius: 20px;
+background-color: #A01837;
+border-width: 5px;
+border: solid white;
+color: white;
+width: 80px;
+margin-right: 20px;
+transition: 200ms ease;
+font-weight: 700;
+}
+
+.botao:hover {
+background-color: white;
+color: #A01837;
+}
+
+.pergunta {
+display: flex;
+justify-content: center;
+}
+
 
 
 
