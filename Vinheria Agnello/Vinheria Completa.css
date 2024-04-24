@@ -1,0 +1,523 @@
+nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color:#A01837;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.logoFull{
+    display: flex;
+    justify-content: center;
+    scale: 50%;
+    width: 400px;
+}
+
+button{
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+}
+.navBtn {
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.menuAgn{
+    width: 60px;
+    height: 80px;
+}
+
+.login{
+    width: 60px;
+    height: 60px;
+}
+
+.carrinho{
+    width: 60px;
+    height: 60px;
+}
+
+/* CONFIG DA AREA DE "OUTDOORS" */
+.outdoor{
+    display: flex;
+    flex-direction: nowrap;
+    background-image: linear-gradient(#000, #2D2D2D);
+    width: 100%;
+    height: 650px;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+}
+
+.direcBtn{
+    background-color: transparent;
+    border: none;
+    width: 80px;
+    height: 80px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.btnImg{
+    opacity: 0.7;
+    width: 80px;
+    height: 80px;
+}
+
+.outdoor .carrosselBtn{
+    position: absolute;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.imgExmp{
+    width: 1300px;
+    height: 480px;
+     /*box-shadow: |sombra-eixo-x| |sombra-eixo-y| | blur | espalhamento | |cor(padrão: Preto)|  */
+    box-shadow: 0px 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+margin: 0;
+}
+
+h1 {
+font-size: 240%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: italic;
+color: #A01837;
+margin: 0px;
+}
+
+h2 {
+color: #A01837;
+user-select: none;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+font-size: 250%;
+padding-top: -10px;
+margin-top: 10px;
+margin-bottom: 0px;
+}
+
+p {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pesquisa {
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.barra {
+width: 800px;
+height: 35px;
+background-color: #D9D9D9;
+border-radius: 100px;
+border-color: transparent;
+padding-left: 25px;
+transition: 400ms ease;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 105%;
+font-weight: 200;
+}
+
+.barra:focus, .barra:active {
+background-color: #A01837;
+color: white;
+}
+
+.agnello {
+width: 150px;
+height: 150px;
+cursor: pointer;
+}
+
+.selecionaagnello {
+background-color: transparent;
+border: none;
+}
+
+.filtro {
+padding-left: 20px;
+width: 40px;
+height: 40px;
+cursor: pointer;
+}
+
+.selecionafiltro {
+background-color: transparent;
+border: none;
+}
+
+.catalogue {
+margin-left: 300px;
+margin-right: 300px;
+margin-top: 0px;
+height: 850px;
+overflow: auto;
+padding: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.produto {
+display: inline-flex;
+padding-bottom: 90px;
+}
+
+.description {
+padding-right: 40px;
+text-align: justify;
+}
+
+.garrafa {
+height: 380px;
+background-color: #D9D9D9;
+margin-right: 25px;
+border-radius: 15px;
+cursor: pointer;
+}
+
+.price {
+padding: 10px;
+text-align: center;
+background-color: #D9D9D9;
+border-radius: 15px;
+align-items: end;
+display:inline-block;
+}
+
+.abaixo {
+padding-top: 0px;
+}
+
+.era {
+color: #A01837;
+user-select: none;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 150%;
+text-align: center;
+margin-bottom: -15px;
+text-decoration: line-through;
+}
+
+.precodentro-comprarfora {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.comprar {
+scale: 150%;
+margin-top: 25px;
+width: 151px;
+height: 30px;
+border-radius: 10px;
+border-width: 0px;
+font-size: 70%;
+font-weight: 600;
+color: white;
+background-color: #A01837;
+transition: 300ms ease;
+border-width: 2.5px;
+border: solid #A01837;
+margin-left: 38px;
+cursor: pointer;
+}   
+
+.comprar:hover {
+background-color: #A01837;
+color: white;
+border: solid #701127;
+border-width: 2.5px;
+box-shadow: rgba(0, 0, 0, 0.445) 0px 2px 3px 0px;
+}
+
+.rate {
+width: 570px;
+}
+
+a {
+color: black;
+text-decoration: transparent;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 120%;
+font-weight: 700;
+transition: 300ms ease;
+}
+
+a:hover {
+color: #A01837;
+text-decoration: underline;
+}
+
+
+.user {
+margin: 0px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 120%;
+font-weight: 700;
+}
+
+h5 {
+margin: 0px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 120%;
+font-weight: 400;
+user-select: none;
+}
+
+.comments {
+background-color: #D9D9D9;
+padding: 10px;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+margin-top: 10px;
+}
+
+.photoandname {
+display: flex;
+flex-direction: row;
+padding-bottom: 10px;
+}
+
+.profile {
+width: 30px;
+height: 30px;
+padding-right: 10px;
+cursor: pointer;
+}
+
+.sessioncomment {
+padding: 10px;
+color: white;
+font-size: 80%;
+display: block;
+background-color: #a1a1a1;
+border-radius: 10px;
+}
+
+.video {
+margin-bottom: 30px;
+width: 200px;
+border: solid #A01837;
+border-radius: 10px;
+cursor: pointer;
+}
+
+
+
+.porcima {
+display: flex;
+position: absolute;
+padding-top: 178px;
+padding-right: 67px;
+}
+
+.map {
+display: flex;
+border: solid #FCE8C6;
+border-width: 5px;
+border-radius: 15px;
+scale: 80%;
+margin: 0;
+}
+
+.theplace {
+width: 559px;
+height: 361px;
+border: solid #FCE8C6;
+border-width: 4px;
+border-radius: 15px;
+margin-top: 46px;
+}
+
+.parabotoes {
+position: absolute;
+display: flex;
+justify-content: space-between;
+width: 568px;
+margin-top: 200px;
+}
+
+.slideshow {
+margin: 10px;
+font-size: 300%;
+background-color: transparent;
+border: solid transparent;
+font-weight: 500;
+color: #FCE8C6;
+transition: 50ms ease;
+cursor: pointer;
+}
+
+.slideshow:hover {
+text-shadow: black 0px 0px 20px;
+transform: scale(110%);
+}
+
+.passagem {
+display: flex;
+justify-content: center;
+flex-direction: row;
+margin-top: -10px;
+}
+
+h6 {
+font-size: 200%;
+margin: 0px;
+padding-right: 10px;
+user-select: none;
+}
+.um {
+color: #FCE8C6;
+}
+.dois {
+color: white;
+opacity: 50%;
+}
+.tres {
+color: white;
+opacity: 50%;
+}
+
+.visitus {
+margin-top: -5px;
+display: flex;
+justify-content: center;
+background: linear-gradient(100deg, #A01837, black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#inner{
+    height: 100%
+ }
+body{
+    margin: 0;
+
+}
+p {
+    color: white;
+}
+.textotitulo {
+    font-size: 300%;
+    
+    text-align: center;
+}
+h1 {
+    color: #A01837;
+}
+    
+.aboutuss{
+    width: 100%;
+    height: fit-content;
+    background-image: url(Img/Sem\ título.png);
+    
+    
+}
+
+
+.container{
+    display: flex; 
+    align-items: center;
+
+}
+.texto{
+    flex: 1; 
+    padding: 20px;
+}
+.image{
+    flex: 1; 
+    text-align: center;
+}
+.velho{
+    max-width: 100%; 
+    height: auto;
+
+}
+
+footer {
+	background-color: #A01837;
+	color: #fff;
+	padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul {
+    
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+nav ul li a{
+    color: white;
+}
+nav img {
+    width: 115px;
+    height: 119px;
+}
+.escrita {
+    width: 340px;
+    height: 90px;
+    margin: 0 auto;
+}
+.senhor {
+    width: 112px;
+    height: 119px;
+
+}
