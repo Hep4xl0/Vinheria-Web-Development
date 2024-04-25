@@ -85,8 +85,10 @@ function login(){
         senhaUsuario = document.getElementById("senha").value;
 
         if(nomeUsuario === "1234" && senhaUsuario === "1234"){
-            alert("Logado com sucesso!");
+            alert('Logado com sucesso!\nClique em "OK" para ser redirecionado');
+            location.href = (href="Vinheria Completa.html")
             break
+        
         }
 
         alert("Login ou senha invalidos!")
