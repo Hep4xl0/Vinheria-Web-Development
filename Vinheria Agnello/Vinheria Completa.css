@@ -1,3 +1,4 @@
+
 nav{
     display: flex;
     width: 100%;
@@ -114,13 +115,17 @@ body {
 margin: 0;
 }
 
-h1 {
+.aboutuss h1{
+    margin: 0 auto;
+}
+
+.textotitulo {
 user-select: none;
 font-size: 240%;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-style: italic;
 color: #A01837;
-margin: 0px;
+margin: 0 auto;
 }
 
 .nomemaior {
@@ -691,7 +696,7 @@ h1 {
     width: 100%;
     height: fit-content;
     background-image: url(Img/Sem\ título.png);
-    
+    margin: 0 auto;
     
 }
 
@@ -754,4 +759,73 @@ nav img {
 
 .sobrenos {
 color: white;
+}
+
+
+
+/* CSS PAGINA DE LOGIN */
+.backG{
+    width: 100%;
+    height: 1000px;
+    background-color: #A01837;
+}
+.loginPage{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginMenu{
+    display: block;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    width: 350px;
+    height: 350px;
+    background: #f8efe1
+}
+
+.logoLoginPage{
+    scale: 90%;
+}
+
+.titleLogin h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 270%;
+    margin: 0;
+}
+
+.loginMenu input{
+    border: solid 2px #5f5545;
+    border-radius: 10px;
+}
+
+.loginMenu label{
+    font-weight: bold;
+}
+
+.logarBtn{
+    width: 150px;
+    height: 35px;
+    background-color: #A01837;
+    border: solid #A01837;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.logarBtn:hover{
+    background-color: #A01837;
+    color: white;
+    border: solid #701127;
+    border-width: 2.5px;
+    box-shadow: rgba(0, 0, 0, 0.445) 0px 2px 3px 0px;
 }
