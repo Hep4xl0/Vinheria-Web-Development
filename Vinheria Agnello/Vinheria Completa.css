@@ -74,6 +74,8 @@ button{
 
 .outdoor .carrosselBtn{
     position: absolute;
+    display: flex;
+    justify-content: space-between;
 }
 
 figure{
@@ -708,8 +710,10 @@ h1 {
     text-align: center;
 }
 .velho{
-    max-width: 100%; 
+    max-width: 100%;
+    scale: 110%;
     height: auto;
+    margin-bottom: 34px;
 
 }
 
