@@ -1,3 +1,6 @@
+total = 200;
+
+
 function addCarrinho() {
 
 var addCarrinho = document.getElementById("addCarrinho");
@@ -6,7 +9,6 @@ alert("Adicionado ao carrinho com sucesso!");
 
 
 function Subtrair() {
-var subtrair = document.getElementById("subtrair");
 var quantidade = document.getElementById("quantidade");
 var numero = parseInt(quantidade.textContent);
 var valor = document.getElementById("valor");
@@ -28,13 +30,12 @@ valor.innerHTML = `R$ ${total},00`;
 
 
 function Somar() {
-var somar = document.getElementById("somar");
 var quantidade = document.getElementById("quantidade");
 var numero = parseInt(quantidade.textContent);
 var valor = document.getElementById("valor");
 var reais = parseFloat(valor.textContent);
 
-reais = 200;
+var reais = 200;
 
 if (numero == 20) {
 mais = numero;
@@ -48,14 +49,24 @@ quantidade.innerHTML = mais;
 valor.innerHTML = `R$ ${total},00`;
 }
 
+
 function caixaCupom(){
-    var cupomNome = prompt("insira o cupom de desconto no campo abaixo")
-    var cupomNome = cupomNome.toUpperCase()
+    var cupomNome = prompt("insira o cupom de desconto no campo abaixo");
+    var cupomNome = cupomNome.toUpperCase();
+    var valor = document.getElementById("valor");
+    var reais = parseFloat(valor.textContent);
+    var desconto = total - total * 0.1
+
     if (cupomNome == "FIAP2024") {
-        total = total - (total*(10/100))
+        total = desconto
     }
     else{
-        alert("Cupom invalido ou expirado!")
+        alert("Cupom inválido ou expirado!")
     }
+
+    valor.innerHTML= `R$ ${total},00`;
+}
+
+function mostravalor() {
     valor.innerHTML= `R$ ${total},00`;
 }
